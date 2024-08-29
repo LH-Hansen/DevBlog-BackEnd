@@ -5,6 +5,10 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevBlog-BackEnd", "DevBlog-BackEnd\DevBlog-BackEnd.csproj", "{84B740B4-BF51-40F8-9DF7-1BD544FC77F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevBlog-Backend.Repository", "DevBlog-Backend.Repository\DevBlog-Backend.Repository.csproj", "{3AEDE91C-3DC4-49DA-A76A-A58A0F4F1846}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevBlog-Backend.Service", "DevBlog-Backend.Service\DevBlog-Backend.Service.csproj", "{F458F9BB-FD29-41D4-803C-3121B5E4B551}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{84B740B4-BF51-40F8-9DF7-1BD544FC77F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84B740B4-BF51-40F8-9DF7-1BD544FC77F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84B740B4-BF51-40F8-9DF7-1BD544FC77F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AEDE91C-3DC4-49DA-A76A-A58A0F4F1846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AEDE91C-3DC4-49DA-A76A-A58A0F4F1846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AEDE91C-3DC4-49DA-A76A-A58A0F4F1846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AEDE91C-3DC4-49DA-A76A-A58A0F4F1846}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F458F9BB-FD29-41D4-803C-3121B5E4B551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F458F9BB-FD29-41D4-803C-3121B5E4B551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F458F9BB-FD29-41D4-803C-3121B5E4B551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F458F9BB-FD29-41D4-803C-3121B5E4B551}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
