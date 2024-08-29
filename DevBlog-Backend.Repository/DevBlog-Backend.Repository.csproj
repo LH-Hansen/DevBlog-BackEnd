@@ -10,9 +10,6 @@
 
   <ItemGroup>
     <Folder Include="DTO\" />
-    <Folder Include="Enteties\" />
-    <Folder Include="Interface\" />
-    <Folder Include="Repository\" />
   </ItemGroup>
 
 </Project>
