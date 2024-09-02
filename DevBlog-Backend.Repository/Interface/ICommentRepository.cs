@@ -2,9 +2,9 @@
 
 namespace DevBlog_Backend.Repository.Interface
 {
-    internal interface ICommentRepository
+    public interface ICommentRepository
     {
-        void CreateComment(User author, string content);
+        void CreateComment(Comment newComment);
         bool DeleteComment(uint id);
     }
 }

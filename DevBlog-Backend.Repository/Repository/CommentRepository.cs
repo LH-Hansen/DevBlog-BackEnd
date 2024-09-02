@@ -7,14 +7,9 @@ namespace DevBlog_Backend.Repository.Repository
     {
         private List<Comment> _commentList = new();
 
-        private uint _commentsCreated = 0;
-
-        public void CreateComment(User author, string content)
+        public void CreateComment(Comment newComment)
         {
-            Comment newComment = new(_commentsCreated, author, content);
-
             _commentList.Add(newComment);
-            _commentsCreated++;
         }
 
         public bool DeleteComment(uint id)
