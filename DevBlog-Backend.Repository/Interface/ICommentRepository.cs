@@ -5,6 +5,6 @@ namespace DevBlog_Backend.Repository.Interface
     public interface ICommentRepository
     {
         void CreateComment(Comment newComment);
-        bool DeleteComment(uint id);
+        bool DeleteComment(Guid id);
     }
 }

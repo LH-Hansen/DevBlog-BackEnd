@@ -12,7 +12,7 @@ namespace DevBlog_Backend.Repository.Repository
             _commentList.Add(newComment);
         }
 
-        public bool DeleteComment(uint id)
+        public bool DeleteComment(Guid id)
         {
             if (CheckIfCommentExists(id))
             {
@@ -23,7 +23,7 @@ namespace DevBlog_Backend.Repository.Repository
             return false;
         }
 
-        private bool CheckIfCommentExists(uint id)
+        private bool CheckIfCommentExists(Guid id)
         {
             foreach (Comment comment in _commentList)
             {

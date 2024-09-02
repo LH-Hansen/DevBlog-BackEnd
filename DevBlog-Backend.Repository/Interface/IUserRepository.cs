@@ -4,11 +4,11 @@ namespace DevBlog_Backend.Repository.Interface
 {
     public interface IUserRepository
     {
-        void CreateUser(string username, string password, string email);
-        void DeleteUser(uint id);
-        User GetUserById(uint id);
+        void CreateUser(User newUser);
+        void DeleteUser(Guid id);
+        User GetUserById(Guid id);
         List<User> GetUserList();
-        void UpdateEmail(uint id, string newEmail);
-        void UpdatePassword(uint id, string newPassword);
+        void UpdateEmail(Guid id, string newEmail);
+        void UpdatePassword(Guid id, string newPassword);
     }
 }

@@ -2,14 +2,14 @@
 {
     public class Comment
     {
-        public uint Id { get; set; }
+        public Guid Id { get; set; }
         public User Author { get; set; }
         public string Content { get; set; }
         public DateTime TimeStamp { get; set; }
 
-        public Comment(uint id, User author, string content)
+        public Comment(User author, string content)
         {
-            Id = id;
+            Id = new();
             Author = author;
             Content = content;
             TimeStamp = DateTime.Now;

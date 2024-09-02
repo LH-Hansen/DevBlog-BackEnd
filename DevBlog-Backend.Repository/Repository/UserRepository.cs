@@ -7,45 +7,40 @@ namespace DevBlog_Backend.Repository.Repository
     {
         private List<User> _userList = new();
 
-        private uint _accountsCreated = 0;
-
-        public void CreateUser(string username, string password, string email)
+        public void CreateUser(User newUser)
         {
-            User newUser = new(_accountsCreated, username, email, password);
-
             _userList.Add(newUser);
-            _accountsCreated++;
         }
 
-        public List<User> GetUserList() { return _userList; }
+        public List<User> GetUserList()
+        { return _userList; }
 
-        public User GetUserById(uint id)
+        public User GetUserById(Guid id)
         {
-            return (User)_userList.Where(u => u.Id.Equals(id));
+            return _userList.FirstOrDefault(u => u.Id.Equals(id));
         }
-        public void UpdateEmail(uint id, string newEmail)
+        public void UpdateEmail(Guid id, string newEmail)
         {
             _userList.FirstOrDefault(u => u.Id.Equals(id)).Email = newEmail;
         }
 
-        public void UpdatePassword(uint id, string newPassword)
+        public void UpdatePassword(Guid id, string newPassword)
         {
             _userList.FirstOrDefault(u => u.Id.Equals(id)).Password = newPassword;
         }
 
-        public void DeleteUser(uint id)
+        public void DeleteUser(Guid id)
         {
             if (UserExist(id))
                 _userList.Remove(_userList.FirstOrDefault(u => u.Id.Equals(id)));
         }
 
-        private bool UserExist(uint id)
+        private bool UserExist(Guid id)
         {
             foreach (User user in _userList)
             {
                 if (user.Id == id) return true;
             }
-
             return false;
         }
     }

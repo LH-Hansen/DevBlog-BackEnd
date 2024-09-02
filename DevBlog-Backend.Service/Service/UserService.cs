@@ -4,7 +4,7 @@ using DevBlog_Backend.Service.Interface;
 
 namespace DevBlog_Backend.Service.Service
 {
-    public class UserService : IUserService
+    internal class UserService : IUserService
     {
         public readonly IUserRepository _userRepository;
 
@@ -15,14 +15,14 @@ namespace DevBlog_Backend.Service.Service
         {
             if (email.Contains("@"))
             {
-                _userRepository.CreateUser(username, password, email);
+                User newUser = new(username, password, email);
+                _userRepository.CreateUser(newUser);
                 return true;
             }
-
             return false;
         }
 
-        public bool DeleteUser(uint id)
+        public bool DeleteUser(Guid id)
         {
             if (_userRepository.GetUserById(id) != null)
             {
@@ -30,11 +30,10 @@ namespace DevBlog_Backend.Service.Service
 
                 return true;
             }
-
             return false;
         }
 
-        public User GetUserById(uint id)
+        public User GetUserById(Guid id)
         {
             return _userRepository.GetUserById(id);
         }
@@ -42,12 +41,12 @@ namespace DevBlog_Backend.Service.Service
         public List<User> GetUserList()
         { return _userRepository.GetUserList(); }
 
-        public void UpdateEmail(uint id, string email)
+        public void UpdateEmail(Guid id, string email)
         {
             _userRepository.UpdateEmail(id, email);
         }
 
-        public void UpdatePassword(uint id, string newPassword)
+        public void UpdatePassword(Guid id, string newPassword)
         {
             _userRepository.UpdatePassword(id, newPassword);
         }

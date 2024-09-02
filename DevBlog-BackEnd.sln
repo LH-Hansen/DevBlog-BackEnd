@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevBlog-BackEnd", "DevBlog-BackEnd\DevBlog-BackEnd.csproj", "{84B740B4-BF51-40F8-9DF7-1BD544FC77F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevBlog-BackEnd", "DevBlog-BackEnd\DevBlog-BackEnd.csproj", "{84B740B4-BF51-40F8-9DF7-1BD544FC77F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevBlog-Backend.Repository", "DevBlog-Backend.Repository\DevBlog-Backend.Repository.csproj", "{3AEDE91C-3DC4-49DA-A76A-A58A0F4F1846}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevBlog-Backend.Repository", "DevBlog-Backend.Repository\DevBlog-Backend.Repository.csproj", "{3AEDE91C-3DC4-49DA-A76A-A58A0F4F1846}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevBlog-Backend.Service", "DevBlog-Backend.Service\DevBlog-Backend.Service.csproj", "{F458F9BB-FD29-41D4-803C-3121B5E4B551}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevBlog-Backend.Service", "DevBlog-Backend.Service\DevBlog-Backend.Service.csproj", "{F458F9BB-FD29-41D4-803C-3121B5E4B551}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevBlog-Backend.UnitTest", "DevBlog-Backend.UnitTest\DevBlog-Backend.UnitTest.csproj", "{43609EF8-C296-4A2E-80ED-3C6552D2DFD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{F458F9BB-FD29-41D4-803C-3121B5E4B551}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F458F9BB-FD29-41D4-803C-3121B5E4B551}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F458F9BB-FD29-41D4-803C-3121B5E4B551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43609EF8-C296-4A2E-80ED-3C6552D2DFD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43609EF8-C296-4A2E-80ED-3C6552D2DFD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43609EF8-C296-4A2E-80ED-3C6552D2DFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43609EF8-C296-4A2E-80ED-3C6552D2DFD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

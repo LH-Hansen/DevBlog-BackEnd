@@ -5,10 +5,10 @@ namespace DevBlog_Backend.Service.Interface
     public interface IUserService
     {
         bool CreateUser(string username, string password, string email);
-        bool DeleteUser(uint id);
-        User GetUserById(uint id);
+        bool DeleteUser(Guid id);
+        User GetUserById(Guid id);
         List<User> GetUserList();
-        void UpdateEmail(uint id, string email);
-        void UpdatePassword(uint id, string newPassword);
+        void UpdateEmail(Guid id, string email);
+        void UpdatePassword(Guid id, string newPassword);
     }
 }

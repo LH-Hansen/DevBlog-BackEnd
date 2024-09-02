@@ -11,14 +11,11 @@ namespace DevBlog_Backend.Service.Service
         public CommentService(ICommentRepository commentRepository)
         { _commentRepository = commentRepository; }
 
-        private uint _commentsCreated = 0;
-
         public void CreateComment(User author, string content)
         {
-            Comment newComment = new(_commentsCreated, author, content);
+            Comment newComment = new(author, content);
 
             _commentRepository.CreateComment(newComment);
-            _commentsCreated++;
         }
 
         public void DeleteComment(User author)
