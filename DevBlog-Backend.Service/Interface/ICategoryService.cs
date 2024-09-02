@@ -1,5 +1,4 @@
-﻿
-namespace DevBlog_Backend.Service.Service
+﻿namespace DevBlog_Backend.Service.Interface
 {
     internal interface ICategoryService
     {

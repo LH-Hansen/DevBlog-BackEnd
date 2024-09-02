@@ -1,9 +1,10 @@
 ﻿using DevBlog_Backend.Repository.Enteties;
 using DevBlog_Backend.Repository.Interface;
+using DevBlog_Backend.Service.Interface;
 
 namespace DevBlog_Backend.Service.Service
 {
-    internal class CategoryService
+    internal class CategoryService : ICategoryService
     {
         public readonly ICategoryRepository _categoryRepository;
 
