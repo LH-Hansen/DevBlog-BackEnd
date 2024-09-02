@@ -3,9 +3,9 @@ using DevBlog_Backend.Repository.Interface;
 
 namespace DevBlog_Backend.Repository.Repository
 {
-    public class UserRepository : IUserRepository
+    internal class UserRepository : IUserRepository
     {
-        private List<User> _users = new();
+        private List<User> _userList = new();
 
         private uint _accountsCreated = 0;
 
@@ -13,35 +13,35 @@ namespace DevBlog_Backend.Repository.Repository
         {
             User newUser = new(_accountsCreated, username, email, password);
 
-            _users.Add(newUser);
+            _userList.Add(newUser);
             _accountsCreated++;
         }
 
-        public List<User> GetUserList() { return _users; }
+        public List<User> GetUserList() { return _userList; }
 
         public User GetUserById(uint id)
         {
-            return (User)_users.Where(x => x.Id.Equals(id));
+            return (User)_userList.Where(u => u.Id.Equals(id));
         }
         public void UpdateEmail(uint id, string newEmail)
         {
-            _users.FirstOrDefault(x => x.Id.Equals(id)).Email = newEmail;
+            _userList.FirstOrDefault(u => u.Id.Equals(id)).Email = newEmail;
         }
 
         public void UpdatePassword(uint id, string newPassword)
         {
-            _users.FirstOrDefault(x => x.Id.Equals(id)).Password = newPassword;
+            _userList.FirstOrDefault(u => u.Id.Equals(id)).Password = newPassword;
         }
 
         public void DeleteUser(uint id)
         {
             if (UserExist(id))
-                _users.Remove(_users.FirstOrDefault(x => x.Id.Equals(id)));
+                _userList.Remove(_userList.FirstOrDefault(u => u.Id.Equals(id)));
         }
 
         private bool UserExist(uint id)
         {
-            foreach (User user in _users)
+            foreach (User user in _userList)
             {
                 if (user.Id == id) return true;
             }
