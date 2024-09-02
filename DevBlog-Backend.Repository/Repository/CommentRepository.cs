@@ -17,7 +17,6 @@ namespace DevBlog_Backend.Repository.Repository
             if (CheckIfCommentExists(id))
             {
                 _commentList.Remove(_commentList.FirstOrDefault(c => c.Id.Equals(id)));
-
                 return true;
             }
             return false;
