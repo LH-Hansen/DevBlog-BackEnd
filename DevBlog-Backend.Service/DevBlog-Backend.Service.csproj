@@ -9,8 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interface\" />
-    <Folder Include="Service\" />
+    <ProjectReference Include="..\DevBlog-Backend.Repository\DevBlog-Backend.Repository.csproj" />
   </ItemGroup>
 
 </Project>

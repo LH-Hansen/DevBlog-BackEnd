@@ -9,7 +9,7 @@ namespace DevBlog_Backend.Repository.Repository
 
         private uint _accountsCreated = 0;
 
-        public void CreateUser(uint id, string username, string password, string email)
+        public void CreateUser(string username, string password, string email)
         {
             User newUser = new(_accountsCreated, username, email, password);
 
