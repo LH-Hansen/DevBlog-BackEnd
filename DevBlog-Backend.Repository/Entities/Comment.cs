@@ -1,4 +1,4 @@
-﻿namespace DevBlog_Backend.Repository.Enteties
+﻿namespace DevBlog_Backend.Repository.Entities
 {
     public class Comment
     {

@@ -1,5 +1,5 @@
 ﻿using DevBlog_Backend.Repository.DTO;
-using DevBlog_Backend.Repository.Enteties;
+using DevBlog_Backend.Repository.Entities;
 using DevBlog_Backend.Repository.Interface;
 using DevBlog_Backend.Service.Interface;
 

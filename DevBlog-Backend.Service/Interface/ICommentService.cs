@@ -1,4 +1,4 @@
-﻿using DevBlog_Backend.Repository.Enteties;
+﻿using DevBlog_Backend.Repository.Entities;
 
 namespace DevBlog_Backend.Service.Interface
 {

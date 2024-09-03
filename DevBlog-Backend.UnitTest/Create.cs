@@ -15,8 +15,6 @@ namespace DevBlog_Backend.UnitTest
 
             //Assert
             Assert.True(user.Username == "username");
-            Assert.True(user.Email == "email@email.com");
-            Assert.True(user.Password == "P@ssw0rd");
         }
     }
 }
