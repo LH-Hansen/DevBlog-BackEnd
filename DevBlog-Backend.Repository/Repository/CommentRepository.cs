@@ -30,5 +30,7 @@ namespace DevBlog_Backend.Repository.Repository
             }
             return false;
         }
+
+        //todo; make remove comment list and make exchange it with post.
     }
 }

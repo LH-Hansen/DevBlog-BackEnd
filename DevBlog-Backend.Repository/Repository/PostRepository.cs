@@ -9,9 +9,7 @@ namespace DevBlog_Backend.Repository.Repository
         private List<Post> _postList = new();
 
         public void CreatePost(Post newPost)
-        {
-            _postList.Add(newPost);
-        }
+        { _postList.Add(newPost); }
 
         public bool AddTag(Guid id, Tag tag)
         {
@@ -36,14 +34,10 @@ namespace DevBlog_Backend.Repository.Repository
         public List<Post> GetPostList() { return _postList; }
 
         public List<Post> GetPostListByTag(Tag tag)
-        {
-            return _postList.Where(p => p.Tags.Equals(tag)).ToList();
-        }
+        { return _postList.Where(p => p.Tags.Equals(tag)).ToList(); }
 
         public List<Post> GetPostListByCategory(Category category)
-        {
-            return _postList.Where(p => p.Category.Equals(category)).ToList();
-        }
+        { return _postList.Where(p => p.Category.Equals(category)).ToList(); }
 
         public bool UpdateHead(string newHead, Guid id)
         {
@@ -82,8 +76,6 @@ namespace DevBlog_Backend.Repository.Repository
                 if (post.Id == id) return true;
             }
             return false;
-
         }
-
     }
 }
