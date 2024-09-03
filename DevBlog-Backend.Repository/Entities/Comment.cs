@@ -2,7 +2,7 @@
 {
     public class Comment
     {
-        public Guid Id { get; set; }
+        public Guid Id { get; init; }
         public User Author { get; set; }
         public string Content { get; set; }
         public DateTime TimeStamp { get; set; }
