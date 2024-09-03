@@ -7,11 +7,15 @@ namespace DevBlog_Backend.Service.Service
 {
     internal class UserService : IUserService
     {
+
+        #region Dependency Injection
         public readonly IUserRepository _userRepository;
 
         public UserService(IUserRepository userRepository)
         { _userRepository = userRepository; }
+        #endregion
 
+        #region CRUD methods
         public bool CreateUser(string username, string password, string email)
         {
             if (email.Contains("@"))
@@ -47,8 +51,9 @@ namespace DevBlog_Backend.Service.Service
 
         public bool ValidateLogin(string username, string password)
         { return _userRepository.ValidateLogin(username, password); }
+        #endregion
 
-        //DTO
+        #region DTO
         private UserInfoDTO CreateUserInfoDTO(User user)
         {
             return new UserInfoDTO()
@@ -69,5 +74,6 @@ namespace DevBlog_Backend.Service.Service
             }
             return userInforDTOList;
         }
+        #endregion
     }
 }
