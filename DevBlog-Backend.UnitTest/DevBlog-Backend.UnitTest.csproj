@@ -18,6 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DevBlog-Backend.Repository\DevBlog-Backend.Repository.csproj" />
+    <ProjectReference Include="..\DevBlog-Backend.Service\DevBlog-Backend.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
 

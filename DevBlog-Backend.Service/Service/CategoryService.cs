@@ -21,7 +21,7 @@ namespace DevBlog_Backend.Service.Service
         public void DeleteCategory(Guid id)
         { _categoryRepository.DeleteCategory(id); }
 
-        public Category GetCategory(Guid id)
+        public Category GetCategoryById(Guid id)
         { return _categoryRepository.GetCategory(id); }
     }
 }
