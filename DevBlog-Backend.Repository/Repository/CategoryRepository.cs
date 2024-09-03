@@ -18,9 +18,10 @@ namespace DevBlog_Backend.Repository.Repository
         }
 
         public void DeleteCategory(Guid id)
-        {
-            _categoryList.Remove(_categoryList.FirstOrDefault(c => c.Id.Equals(id)));
-        }
+        { _categoryList.Remove(_categoryList.FirstOrDefault(c => c.Id.Equals(id))); }
+
+        public Category GetCategory(Guid id)
+        { return _categoryList.FirstOrDefault(c => c.Id.Equals(id)); }
 
         private bool CheckIfCategoryNameExists(string name)
         {

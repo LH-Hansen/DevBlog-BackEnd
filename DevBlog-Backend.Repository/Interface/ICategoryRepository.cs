@@ -6,5 +6,6 @@ namespace DevBlog_Backend.Repository.Interface
     {
         bool CreateCategory(Category newCategory);
         void DeleteCategory(Guid id);
+        Category GetCategory(Guid id);
     }
 }
