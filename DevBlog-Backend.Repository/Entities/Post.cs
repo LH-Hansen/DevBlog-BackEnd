@@ -5,21 +5,21 @@ namespace DevBlog_Backend.Repository.Entities
     public class Post
     {
         public Guid Id { get; init; }
-        public string Title { get; set; }
-        public string Content { get; set; }
+        public string Head { get; set; }
+        public string Body { get; set; }
         public User Author { get; init; }
-        public List<Tag> Tag { get; set; }
+        public List<Tag> Tags { get; set; }
         public Category Category { get; set; }
         public List<Comment> Comments { get; set; }
         public DateTime Timestamp { get; init; }
 
-        public Post(string title, string content, User author, Category category)
+        public Post(string head, string body, User author, Category category)
         {
             Id = Guid.NewGuid();
-            Title = title;
-            Content = content;
+            Head = head;
+            Body = body;
             Author = author;
-            Tag = new List<Tag>();
+            Tags = new List<Tag>();
             Category = category;
             Comments = new List<Comment>();
             Timestamp = DateTime.Now;

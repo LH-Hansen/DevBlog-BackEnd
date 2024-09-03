@@ -4,14 +4,14 @@
     {
         public Guid Id { get; init; }
         public User Author { get; set; }
-        public string Content { get; set; }
+        public string Body { get; set; }
         public DateTime TimeStamp { get; set; }
 
-        public Comment(User author, string content)
+        public Comment(User author, string body)
         {
             Id = new();
             Author = author;
-            Content = content;
+            Body = body;
             TimeStamp = DateTime.Now;
         }
     }

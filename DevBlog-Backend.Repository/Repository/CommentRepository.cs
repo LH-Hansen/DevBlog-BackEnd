@@ -5,7 +5,7 @@ namespace DevBlog_Backend.Repository.Repository
 {
     internal class CommentRepository : ICommentRepository
     {
-        private List<Comment> _commentList = new();
+        private readonly List<Comment> _commentList = new();
 
         public void CreateComment(Comment newComment)
         {
