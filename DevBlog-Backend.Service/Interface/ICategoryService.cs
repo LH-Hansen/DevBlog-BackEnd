@@ -3,6 +3,7 @@
     public interface ICategoryService
     {
         bool CreateCategory(string name);
-        bool DeleteCategory(Guid id);
+        void DeleteCategory(Guid id);
+        ICategoryService GetCategoryById(Guid id);
     }
 }

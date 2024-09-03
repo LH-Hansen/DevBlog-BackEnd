@@ -18,9 +18,10 @@ namespace DevBlog_Backend.Service.Service
             return _categoryRepository.CreateCategory(newCategory);
         }
 
-        public bool DeleteCategory(Guid id)
-        {
-            return _categoryRepository.DeleteCategory(id);
-        }
+        public void DeleteCategory(Guid id)
+        { _categoryRepository.DeleteCategory(id); }
+
+        public Category GetCategory(Guid id)
+        { return _categoryRepository.GetCategory(id); }
     }
 }
