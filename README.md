@@ -40,7 +40,7 @@ User model, -repository & repository interface, -service and service interface c
 ## Known issues
 So far the program is unable to compile/run due to its lack of front end implementations.
 
-##ToDo##
+## ToDo
 - Add front end functionality using RazorPages.
 - Add database functionality.
 
