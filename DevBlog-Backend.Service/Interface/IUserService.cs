@@ -8,7 +8,7 @@ namespace DevBlog_Backend.Service.Interface
         bool DeleteUser(Guid id);
         UserInfoDTO GetUserById(Guid id);
         List<UserInfoDTO> GetUserList();
-        void UpdateEmail(Guid id, string email);
-        void UpdatePassword(Guid id, string newPassword);
+        bool UpdateEmail(Guid id, string email);
+        bool UpdatePassword(Guid id, string newPassword);
     }
 }

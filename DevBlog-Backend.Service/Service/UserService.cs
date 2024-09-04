@@ -43,11 +43,11 @@ namespace DevBlog_Backend.Service.Service
         public List<UserInfoDTO> GetUserList()
         { return CreateUserInfoDTOList(_userRepository.GetUserList()); }
 
-        public void UpdateEmail(Guid id, string email)
-        { _userRepository.UpdateEmail(id, email); }
+        public bool UpdateEmail(Guid id, string email)
+        { return _userRepository.UpdateEmail(id, email); }
 
-        public void UpdatePassword(Guid id, string newPassword)
-        { _userRepository.UpdatePassword(id, newPassword); }
+        public bool UpdatePassword(Guid id, string newPassword)
+        { return _userRepository.UpdatePassword(id, newPassword); }
 
         public bool ValidateLogin(string username, string password)
         { return _userRepository.ValidateLogin(username, password); }
