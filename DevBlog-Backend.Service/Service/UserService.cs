@@ -37,8 +37,7 @@ namespace DevBlog_Backend.Service.Service
             return false;
         }
 
-        public UserInfoDTO GetUserById(Guid id)
-        { return CreateUserInfoDTO(_userRepository.GetUserById(id)); }
+        public UserInfoDTO GetUserById(Guid id) => CreateUserInfoDTO(_userRepository.GetUserById(id));
 
         public List<UserInfoDTO> GetUserList()
         { return CreateUserInfoDTOList(_userRepository.GetUserList()); }

@@ -7,7 +7,7 @@
 
         public Category(string name)
         {
-            Id = new();
+            Id = Guid.NewGuid();
             Name = name;
         }
     }

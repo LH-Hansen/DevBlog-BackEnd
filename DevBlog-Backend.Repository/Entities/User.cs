@@ -10,7 +10,7 @@
 
         public User(string username, string email, string password)
         {
-            Id = new();
+            Id = Guid.NewGuid();
             IsAdmin = false;
             Username = username;
             Email = email;

@@ -9,7 +9,7 @@
 
         public Comment(User author, string body)
         {
-            Id = new();
+            Id = Guid.NewGuid();
             Author = author;
             Body = body;
             TimeStamp = DateTime.Now;
