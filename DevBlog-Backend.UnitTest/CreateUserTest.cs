@@ -1,22 +1,23 @@
-using DevBlog_Backend.Repository.Entities;
-
 namespace DevBlog_Backend.UnitTest
 {
     public class CreateUserTest
     {
+        public readonly IUserRepository _userRepository;
+
+        public CreateUserTest(IUserRepository userRepository)
+        { _userRepository = userRepository; }
+
         [Fact]
-        public void CreateUser()
+        public void CreateUserRepository()
         {
             //Arrange
-            User newUser = new User("username", "email@email.com", "P@ssw0rd");
+            User newUser = new("username", "email@email.com", "P@ssw0rd");
 
             //Act
-            User user = newUser;
+            bool result = _userRepository.CreateUser(newUser);
 
             //Assert
-            Assert.True(user.Username == "username");
-            Assert.True(user.Email == "email@email.com");
-            Assert.True(user.Password == "P@ssw0rd");
+            Assert.True(result == true);
         }
     }
 }
