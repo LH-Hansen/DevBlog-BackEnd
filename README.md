@@ -2,9 +2,15 @@
 
 ## Table of contents
 - [Developer(s)](#Developer(s))
+- [Program description](#Program-description)
+- [Changelog](#Changelog)
+- [Known issues](#Known-issues)
+- [Bug reporting](#Bug-reporting)
+- [ToDo](#ToDo)
 
 ### Developer(s)
 LH-Hansen: email@email.com
+
 Github link: [DevBlog-Backend](https://github.com/LH-Hansen/DevBlog-BackEnd/edit/master/README.md)
 
 
