@@ -1,4 +1,4 @@
-﻿namespace DevBlog_Backend
+﻿namespace DevBlog_Backend.Service
 {
     class Program
     {
