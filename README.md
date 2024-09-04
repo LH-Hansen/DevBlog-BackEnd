@@ -1,7 +1,18 @@
 # DevBlog-BackEnd
 
-### Autor(s)
+## Table of contents
+- [Developer(s)](#Developer(s))
+- [Program description](#Program-description)
+- [Changelog](#Changelog)
+- [Known issues](#Known-issues)
+- [Bug reporting](#Bug-reporting)
+- [ToDo](#ToDo)
+
+### Developer(s)
 LH-Hansen: email@email.com
+
+Github link: [DevBlog-Backend](https://github.com/LH-Hansen/DevBlog-BackEnd/edit/master/README.md)
+
 
 ## Program description
 This project is one iteration of a website. The current functionality is limited to purely being the back-end of a blog. Future itterations will see front-end as well as database functionality.
@@ -10,7 +21,7 @@ This project is one iteration of a website. The current functionality is limited
 __3/09/2024__
 *v0.7.0* (current version)
 
-Unit tests for multible models created.
+Unit tests for user model created.
 
 __3/09/2024__
 *v0.6.0*
@@ -40,7 +51,13 @@ User model, -repository & repository interface, -service and service interface c
 ## Known issues
 So far the program is unable to compile/run due to its lack of front end implementations.
 
+## Bug reporting
+Bug reporting is not supported.
+
 ## ToDo
 - Add front end functionality using RazorPages.
+- Create unit tests.
 - Add database functionality.
+
+
 
