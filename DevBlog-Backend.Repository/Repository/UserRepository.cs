@@ -9,7 +9,7 @@ namespace DevBlog_Backend.Repository.Repository
 
         public bool CreateUser(User newUser)
         {
-            if (!UserEmailExists(newUser.Email) && UsernameExist(newUser.Username))
+            if (!UserEmailExists(newUser.Email) && !UsernameExist(newUser.Username))
             {
                 _userList.Add(newUser);
                 return true;
@@ -22,7 +22,7 @@ namespace DevBlog_Backend.Repository.Repository
 
         public User GetUserById(Guid id)
         { return _userList.FirstOrDefault(u => u.Id.Equals(id)); }
-        
+
         public bool UpdateEmail(Guid id, string newEmail)
         {
             if (UserExist(id))
