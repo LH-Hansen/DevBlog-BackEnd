@@ -22,16 +22,35 @@ namespace DevBlog_Backend.Repository.Repository
 
         public User GetUserById(Guid id)
         { return _userList.FirstOrDefault(u => u.Id.Equals(id)); }
-        public void UpdateEmail(Guid id, string newEmail)
-        { _userList.FirstOrDefault(u => u.Id.Equals(id)).Email = newEmail; }
-
-        public void UpdatePassword(Guid id, string newPassword)
-        { _userList.FirstOrDefault(u => u.Id.Equals(id)).Password = newPassword; }
-
-        public void DeleteUser(Guid id)
+        
+        public bool UpdateEmail(Guid id, string newEmail)
         {
             if (UserExist(id))
+            {
+                _userList.FirstOrDefault(u => u.Id.Equals(id)).Email = newEmail;
+                return true;
+            }
+            return false;
+        }
+
+        public bool UpdatePassword(Guid id, string newPassword)
+        {
+            if (UserExist(id))
+            {
+                _userList.FirstOrDefault(u => u.Id.Equals(id)).Password = newPassword;
+                return true;
+            }
+            return false;
+        }
+
+        public bool DeleteUser(Guid id)
+        {
+            if (UserExist(id))
+            {
                 _userList.Remove(_userList.FirstOrDefault(u => u.Id.Equals(id)));
+                return true;
+            }
+            return false;
         }
 
         private bool UsernameExist(string username)
