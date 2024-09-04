@@ -1,5 +1,8 @@
 # DevBlog-BackEnd
 
+## Program description
+This project is one iteration of a website. The current functionality is limited to purely being the back-end of a blog. Future itterations will see front-end as well as database functionality.
+
 ## Table of contents
 - [Developer(s)](#Developer(s))
 - [Program description](#Program-description)
@@ -13,9 +16,6 @@ LH-Hansen: email@email.com
 
 Github link: [DevBlog-Backend](https://github.com/LH-Hansen/DevBlog-BackEnd/edit/master/README.md)
 
-
-## Program description
-This project is one iteration of a website. The current functionality is limited to purely being the back-end of a blog. Future itterations will see front-end as well as database functionality.
 
 ## Changelog
 __3/09/2024__
