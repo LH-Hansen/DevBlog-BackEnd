@@ -21,4 +21,3 @@ namespace DevBlog_Backend.Service.Service
         public bool DeleteTag(Guid id) => _tagRepository.DeleteTag(id);
     }
 }
-}

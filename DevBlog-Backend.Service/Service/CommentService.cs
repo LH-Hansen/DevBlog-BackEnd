@@ -18,9 +18,7 @@ namespace DevBlog_Backend.Service.Service
             _commentRepository.CreateComment(newComment);
         }
 
-        public void DeleteComment(User author)
-        {
-            _commentRepository.DeleteComment(author.Id);
-        }
+        public void DeleteComment(User author) => _commentRepository.DeleteComment(author.Id);
     }
+}
 }
