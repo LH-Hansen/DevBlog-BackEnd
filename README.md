@@ -5,7 +5,6 @@ This project is one iteration of a website. The current functionality is limited
 
 ## Table of contents
 - [Developer(s)](#Developer(s))
-- [Program description](#Program-description)
 - [Changelog](#Changelog)
 - [Known issues](#Known-issues)
 - [Bug reporting](#Bug-reporting)
