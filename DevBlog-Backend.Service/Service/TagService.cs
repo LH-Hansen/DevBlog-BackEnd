@@ -18,9 +18,7 @@ namespace DevBlog_Backend.Service.Service
             return _tagRepository.CreateTag(newTag);
         }
 
-        public bool DeleteTag(Guid id)
-        {
-            return _tagRepository.DeleteTag(id);
-        }
+        public bool DeleteTag(Guid id) => _tagRepository.DeleteTag(id);
     }
+}
 }
